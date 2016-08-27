@@ -1,11 +1,3 @@
-GIT
-  remote: git://github.com/capistrano/rbenv.git
-  revision: e056efc0c361cc15b76ff961d6c5f65ed5e2c57e
-  specs:
-    capistrano-rbenv (2.0.4)
-      capistrano (~> 3.1)
-      sshkit (~> 1.3)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -64,6 +56,9 @@ GEM
     capistrano-rails (1.1.7)
       capistrano (~> 3.1)
       capistrano-bundler (~> 1.1)
+    capistrano-rbenv (2.0.4)
+      capistrano (~> 3.1)
+      sshkit (~> 1.3)
     coffee-rails (4.2.1)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0, < 5.2.x)
@@ -107,6 +102,7 @@ GEM
     nokogiri (1.6.8)
       mini_portile2 (~> 2.1.0)
       pkg-config (~> 1.1.7)
+    pg (0.18.4)
     pkg-config (1.1.7)
     puma (3.6.0)
     rack (2.0.1)
@@ -157,7 +153,6 @@ GEM
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
-    sqlite3 (1.3.11)
     sshkit (1.11.2)
       net-scp (>= 1.1.2)
       net-ssh (>= 2.8.0)
@@ -186,19 +181,19 @@ PLATFORMS
 DEPENDENCIES
   byebug
   capistrano (~> 3.6.1)
-  capistrano-bundler (~> 1.1.4)
-  capistrano-rails (~> 1.1.7)
-  capistrano-rbenv!
+  capistrano-bundler (= 1.1.4)
+  capistrano-rails (= 1.1.7)
+  capistrano-rbenv (= 2.0.4)
   coffee-rails (~> 4.2)
   jbuilder (~> 2.5)
   jquery-rails
   listen (~> 3.0.5)
+  pg
   puma (~> 3.0)
   rails (~> 5.0.0)
   sass-rails (~> 5.0)
   spring
   spring-watcher-listen (~> 2.0.0)
-  sqlite3
   turbolinks (~> 5)
   tzinfo-data
   uglifier (>= 1.3.0)

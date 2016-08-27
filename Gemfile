@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 
 gem 'rails', '~> 5.0.0'
-gem 'sqlite3'
+gem 'pg'
 gem 'puma', '~> 3.0'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
@@ -24,9 +24,9 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'capistrano', '~> 3.6.1'
-  gem 'capistrano-bundler', '~> 1.1.4'
-  gem 'capistrano-rails', '~> 1.1.7'
-  gem 'capistrano-rbenv', github: "capistrano/rbenv"
+  gem 'capistrano-bundler', '1.1.4'
+  gem 'capistrano-rails', '1.1.7'
+  gem 'capistrano-rbenv', '2.0.4'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
